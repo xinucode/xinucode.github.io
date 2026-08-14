@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
+
+/* =========================================================
+   General Page
+   ========================================================= */
+
+body {
+    margin: 0;
+
+    background-color: #0d0d0f;
+    color: #d8d3cc;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   Main Container
+   ========================================================= */
+
+.stories-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px 30px;
+}
+
+
+/* =========================================================
+   Page Title
+   ========================================================= */
+
+.stories-container > h1 {
+    margin: 0 0 60px;
+
+    color: #e6e0d8;
+
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* A subtle line beneath the title */
+
+.stories-container > h1::after {
+    content: "";
+
+    display: block;
+
+    width: 100px;
+    height: 1px;
+
+    margin: 25px auto 0;
+
+    background-color: #7c252b;
+}
+
+
+/* =========================================================
+   Story Cards
+   ========================================================= */
+
+.story {
+    position: relative;
+
+    margin-bottom: 35px;
+    padding: 30px 35px;
+
+    background-color: #151518;
+
+    border: 1px solid #29292d;
+    border-left: 3px solid #642027;
+
+    transition:
+        border-color 0.25s ease,
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.story:hover {
+    background-color: #19191d;
+
+    border-color: #3a3032;
+    border-left-color: #8b3038;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   Story Title
+   ========================================================= */
+
+.story h2 {
+    margin: 0;
+
+    color: #e3ddd5;
+
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+/* =========================================================
+   Story Publisher
+   ========================================================= */
+
+.story h3 {
+    margin: 0;
+
+    color: #e3ddd5;
+
+    /* font-family: "Cinzel", Georgia, serif; */
+    /* font-size: 1.5rem; */
+    /* font-weight: 600; */
+    /* letter-spacing: 0.04em; */
+}
+
+
+/* =========================================================
+   Story Description
+   ========================================================= */
+
+.story p {
+    margin: 0 0 25px;
+
+    color: #bdb8b2;
+
+    font-size: 1.15rem;
+}
+
+
+/* =========================================================
+   Links
+   ========================================================= */
+
+.story-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.story-links a {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    color: #c77b80;
+
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+
+    text-decoration: none;
+
+    border: 1px solid #482126;
+
+    background-color: #1b1517;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.story-links a:hover {
+    color: #f0e8df;
+
+    background-color: #642027;
+
+    border-color: #8b3038;
+}
+
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .stories-container {
+        padding: 45px 18px;
+    }
+
+    .stories-container > h1 {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .story {
+        padding: 24px 22px;
+    }
+
+    .story h2 {
+        font-size: 1.45rem;
+    }
+
+    .story p {
+        font-size: 1.1rem;
+    }
+
+    .story-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .story-links a {
+        text-align: center;
+    }
+}

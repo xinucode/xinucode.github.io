@@ -34,11 +34,11 @@ const stories = [
             {
                 name: "PDF",
                 url: "pdfs/death_date_na_v2.5.pdf"
+            },
+            {
+                name: "Booklet",
+                url: "pdfs/Death Date NA - Booklet.pdf"
             }
-            // {
-                // name: "Large Print PDF",
-                // url: "pdfs/the-first-story-large-print.pdf"
-            // }
         ]
     }
 

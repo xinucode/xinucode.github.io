@@ -710,7 +710,7 @@ function resize_page(){
 
 	if (window.innerWidth < 900) {
 		divs.forEach(function (div) {
-			div.style.width = "95%";
+			div.style.width = "100%";
 		});
 	} else {
 		divs.forEach(function (div) {

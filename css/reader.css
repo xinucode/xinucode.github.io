@@ -1,0 +1,309 @@
+/* =========================================================
+   READER VARIABLES
+   ========================================================= */
+
+:root {
+    --reader-background: white;
+    --reader-font-color: black;
+    --reader-font-size: 5px;
+}
+
+
+/* =========================================================
+   GENERAL
+   ========================================================= */
+
+html,
+body,
+div {
+    padding: 20px;
+    background-color: var(--reader-background);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td,
+tr {
+    margin: 0em;
+    padding: 0.1em;
+}
+
+
+/* =========================================================
+   HOME LINK
+   ========================================================= */
+
+img.home-link {
+    max-height: 70px;
+    height: 100%;
+}
+
+
+div.home-link {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* =========================================================
+   COVER IMAGE
+   ========================================================= */
+
+div.cover-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: right;
+}
+
+
+img.cover-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border: 10px solid black;
+}
+
+
+/* =========================================================
+   SETTINGS FORM
+   ========================================================= */
+
+div.color-form {
+    color: yellow;
+    background-color: #7a8528;
+    border: 10px solid #343523;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+}
+
+
+div.color-form2 {
+    color: yellow;
+    background-color: #7a8528;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 0px;
+
+    white-space: nowrap;
+
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: calc(var(--reader-font-size) * 3px);
+}
+
+
+div.color-form3 {
+    color: yellow;
+    background-color: #7a8528;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px;
+}
+
+
+/* =========================================================
+   GENERAL PARAGRAPHS
+   ========================================================= */
+
+p {
+    text-indent: 1.2em;
+    color: var(--reader-font-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   STORY PARAGRAPHS
+   ========================================================= */
+
+p.Para {
+    line-height: calc(var(--reader-font-size) * 8px);
+    font-size: calc(var(--reader-font-size) * 6px);
+}
+
+
+/* =========================================================
+   TITLES
+   ========================================================= */
+
+p.title {
+    font-size: 1.5em;
+    margin-top: 2em;
+    text-align: center;
+}
+
+
+p.headline {
+    text-align: center;
+    text-indent: 0.2em;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+
+p.chapter {
+    text-indent: 0.2em;
+    page-break-before: always;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+
+h1.title {
+    font-size: 4em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0em;
+    color: var(--reader-font-color);
+    font-size: calc(var(--reader-font-size) * 10px);
+}
+
+
+h2.title {
+    text-align: center;
+    color: var(--reader-font-color);
+    margin-top: 1em;
+    font-size: calc(var(--reader-font-size) * 8px);
+}
+
+
+h3.title {
+    text-align: center;
+    color: var(--reader-font-color);
+    margin-top: 1em;
+    font-size: calc(var(--reader-font-size) * 6px);
+}
+
+
+/* =========================================================
+   CENTERED ELEMENTS
+   ========================================================= */
+
+p.centered {
+    text-indent: 0.2em;
+    text-align: center;
+}
+
+
+span.centered {
+    text-indent: 0.2em;
+    text-align: center;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+a.navigation {
+    color: yellow;
+    align: center;
+    font-size: calc(var(--reader-font-size) * 5px);
+}
+
+
+a.paralink {
+    text-decoration: none;
+}
+
+
+p.footer {
+    color: orange;
+    align: center;
+    font-size: calc(var(--reader-font-size) * 4px);
+}
+
+
+/* =========================================================
+   DYSLexic FONT
+   ========================================================= */
+
+@font-face {
+    font-family: OpenDyslexic;
+
+    src:
+        url("open_dyslexic/OpenDyslexic-Regular.otf")
+        format("opentype");
+}
+
+
+/* =========================================================
+   VARYING COLORS
+   ========================================================= */
+
+p.Para.varying-colors {
+    background-color: black;
+
+    background-repeat: repeat-y;
+
+    background-size:
+        100%
+        calc(var(--reader-font-size) * 40px);
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   NO SELECTION
+   ========================================================= */
+
+.noselect {
+    -webkit-touch-callout: none;
+
+    -webkit-user-select: none;
+
+    -khtml-user-select: none;
+
+    -moz-user-select: none;
+
+    -ms-user-select: none;
+
+    user-select: none;
+	
+	width: 70%;
+	
+	margin: 0 auto;
+}

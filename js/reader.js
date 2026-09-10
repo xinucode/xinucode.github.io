@@ -704,3 +704,31 @@ document.addEventListener(
     "DOMContentLoaded",
     initializeReader
 );
+
+function resize_page(){
+	const divs = document.querySelectorAll(".noselect");
+
+	if (window.innerWidth < 900) {
+		divs.forEach(function (div) {
+			div.style.width = "95%";
+		});
+	} else {
+		divs.forEach(function (div) {
+			div.style.width = "70%";
+		});
+	}
+	const divs2 = document.querySelectorAll(".color-form");
+
+	if (window.innerWidth < 900) {
+		divs2.forEach(function (div) {
+			div.style.flexDirection = "column";
+		});
+	} else {
+		divs2.forEach(function (div) {
+			div.style.flexDirection = "row";
+		});
+	}
+}
+
+resize_page();
+window.addEventListener("resize", resize_page);
